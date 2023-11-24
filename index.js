@@ -1,6 +1,12 @@
-function validar() {
-    alert($('#user').val());
+var bandera= false;
 
-    var user = document.getElementById("user");
-    alert(user.value);
+function validar() {
+    if(bandera){
+        console.log("Validacion completa");
+    }
+}
+
+function correctCaptcha(){
+    console.log("Captcha resuelto correctamente")
+    bandera = true
 }
